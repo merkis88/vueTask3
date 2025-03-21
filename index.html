@@ -11,11 +11,12 @@
 </head>
 <body>
     <div id="app">
-        <div class="columns">
-            <div class="column" v-for="(column, index) in columns">
-                <h2>{{column.title}}</h2>
-            </div>
-        </div>
+        <column v-for="(column, index) in columns" 
+                :key="column.title" 
+                :column="column" 
+                :index="index">
+        </column>
     </div>
 </body>
 </html>
+

@@ -3,9 +3,13 @@ body {
 
 }
 
+
+
 .columns {
     display:flex;
     gap: 30px;
+    justify-content: center;
+    
 }
 
 .column {
@@ -26,4 +30,12 @@ button {
 
 button:hover {
     background-color: #8bc579;
+}
+
+.card-overdue {
+    background-color: red;
+}
+
+.card-completed {
+    background-color: green;
 }
